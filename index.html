@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>FELIZ CUMPLEAÑOS MI AMOR 🎂</title>
+  <style>
+    body {
+      background-color: #fffafc;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 30px;
+      color: #5c3a3a;
+    }
+    h1 {
+      font-size: 2.8em;
+      color: #d63384;
+      margin-bottom: 10px;
+    }
+    .mensaje {
+      margin-top: 20px;
+      font-size: 1.2em;
+      line-height: 1.6;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    button {
+      background-color: #ffcce0;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 20px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #ff99c8;
+    }
+    #extra {
+      display: none;
+      margin-top: 30px;
+      font-size: 1.1em;
+      color: #6b4c4c;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Felices 19 años mi niño lindo 💕</h1>
+
+  <div class="mensaje">
+    Hoy es tu día, y aunque no todo es perfecto, quiero que sepas que te pienso con mucho amor.  
+    Me haces bien, incluso cuando no estás tan cerca como antes.  
+    A veces me siento un poquito invisible, pero también sé que tienes una forma especial de quererme.  
+    Y eso, aunque cambie, sigue tocando mi corazón y mi alma.  
+    Este detalle es para recordarte que tu pulguita te ama mucho, sin condiciones ... solo con ternura.  
+  </div>
+
+  <button onclick="mostrar()">🎁 Ver mi deseo para ti</button>
+
+  <div id="extra">
+    Que este nuevo año te regale momentos sinceros, abrazos reales, y sueños que te hagan sonreír.  
+    Que nunca olvides lo bonito que hay en ti, incluso cuando la vida se pone dificil.  
+    Y que si alguna vez dudas... recuerdes que aquí hubo alguien que te quiso y quiere profundo y de verdad.  
+    <br><br>
+    🌷 Con cariño, Sarita.
+  </div>
+
+  <script>
+    function mostrar() {
+      document.getElementById("extra").style.display = "block";
+    }
+  </script>
+  <button onclick="mostrarVela()">🎂 Sopla la vela del pastel</button>
+
+  <div id="vela" style="display:none; margin-top:30px;">
+    <div style="font-size:4em; animation: parpadeo 1s infinite;">🎂</div>
+    <p>¡Pide un deseo y sopla fuerte! 🌬️</p>
+    <button onclick="soplar()">Soplar la vela 🕯️</button>
+  </div>
+
+  <div id="deseoFinal" style="display:none; margin-top:30px; font-size:1.1em; color:#6b4c4c;">
+    ✨ Que la vida te abrace con dulzura,  
+    que nunca te falte amor verdadero,  
+    y que siempre encuentres motivos para sonreír.  
+    <br><br>
+    🎈 ¡Feliz cumpleaños, mi amor! 💖  
+    <br><br>
+    <strong>🌹 Poema para ti:</strong><br><br>
+    Te amo en lo simple y en lo complejo,<br>
+    en tus risas distraídas y tus silencios largos.<br>
+    Te amo cuando me miras, y también cuando olvidas,<br>
+    porque mi amor no depende de gestos perfectos.<br><br>
+    Te amo como se ama lo que no se explica,<br>
+    como se cuida una flor que no siempre florece,<br>
+    como se espera sin exigir, sin apurar, sin romper.<br><br>
+    Y aunque a veces me duela no estar en tu centro,<br>
+    sigo aquí, amándote suave, profundo, real.<br><br>
+    🌷 Tu pulguita.
+  </div>
+
+  <style>
+    @keyframes parpadeo {
+      0% { opacity: 1; }
+      50% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+  </style>
+
+  <script>
+    function mostrarVela() {
+      document.getElementById("vela").style.display = "block";
+    }
+    function soplar() {
+      document.querySelector("div[style*='font-size:4em']").style.display = "none";
+      document.getElementById("deseoFinal").style.display = "block";
+    }
+  </script>
+</body>
+</html>
